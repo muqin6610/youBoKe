@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class='login'>
       <el-form ref="loginForm" :model="loginForm" label-width="70px" >
           <el-form-item label="用户名" prop="username">
               <el-input v-model="loginForm.username" placeholder="请输入用户名"></el-input>
@@ -39,5 +39,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    
+.login {
+    height: 100%;
+    border: 1px solid red;
+}  
 </style>

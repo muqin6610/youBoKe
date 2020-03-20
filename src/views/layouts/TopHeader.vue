@@ -14,7 +14,7 @@
                     <TopNav/>
                 </div>
                 <div class='mySet-box'>
-                    <userLayout/>
+                    <UserLayout/>
                 </div>
             </div>
         </div>
@@ -23,13 +23,13 @@
 
 <script>
 import TopNav from '../layouts/TopNav'
-import userLayout from '../layouts/userLayout'
+import UserLayout from '../layouts/UserLayout'
 
 export default {
     name: 'TopHeader',
     components: {
         TopNav,
-        userLayout,
+        UserLayout,
     },
     data() {
         return {
@@ -63,11 +63,11 @@ export default {
     display: flex;
 }
 .search-box {
-    width: 40%;
+    width: 30%;
     height: 100%;
 }
 .botton-box {
-    width: 60%;
+    width: 70%;
     height: 100%;
     display: flex;
 }
@@ -76,10 +76,10 @@ export default {
     margin: 15px 25px 0 0;
 }
 .menu-box {
-    width: 70%;
+    flex: 1;
 }
 .mySet-box {
-    width: 30%;
+    width: 150px;
 }
 
 </style>

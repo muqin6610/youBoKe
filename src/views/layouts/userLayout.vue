@@ -10,7 +10,7 @@
             <div  class='el-avatar-box'>
               <el-dropdown placement='bottom'>
                 <span class="el-dropdown-link">
-                  <el-avatar style='cursor:pointer;' slot="reference" src="https://user-gold-cdn.xitu.io/2019/11/5/16e39396b5133aae?imageView2/1/w/100/h/100/q/85/format/webp/interlace/1"></el-avatar>
+                  <el-avatar style='cursor:pointer;' slot="reference" src="https://fuss10.elemecdn.com/3/28/bbf893f792f03a54408b3b7a7ebf0jpeg.jpeg"></el-avatar>
                 </span>
                 <el-dropdown-menu slot="dropdown">
                   <el-dropdown-item class='detailsUser'>
@@ -101,21 +101,16 @@ export default {
   font-size: 24px;
   cursor: pointer;
 }
+.left-el-avatar {
+  display: flex;
+}
 // 通知图标区域样式
 .el-icon-message-solid-box {
-  width: 40px;
-  float: left;
-  margin-top: 15px;
+  margin: 10px 30px 0 0;
 }
 // 头像区域样式
 .el-avatar-box {
-  width: 80px;
-  margin-left: 15px;
-  float: right;
-}
-// 头像区域样式
-.left-el-avatar {
-  float: left;
+  margin-right: 20px;
 }
 // 头像更多区域样式
 .detailsUser {
