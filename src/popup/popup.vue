@@ -14,6 +14,8 @@
 </template>
 
 <script>
+import router from '../router/index.js'
+
 export default {
   data () {
     return {
@@ -31,8 +33,7 @@ export default {
     btnClick () {
       this.show = false
       if(this.status === '2') {
-        console.log(this.router)
-          // this.$router.push('/')
+          router.push('/login')
       }
     }
   }
