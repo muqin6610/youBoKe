@@ -11,6 +11,9 @@ import 'nprogress/nprogress.css'
 
 Vue.use(elementUI)
 
+import popupRegistry from './popup/index'
+Vue.use(popupRegistry)
+
 Vue.config.productionTip = false
 
 

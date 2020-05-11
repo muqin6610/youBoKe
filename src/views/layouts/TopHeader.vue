@@ -6,7 +6,7 @@
         <div class='top-bar'>
             <div class='search-box'>
                 <div class='search'>
-                    <el-input v-model="search" placeholder="请输入搜索内容" prefix-icon="el-icon-search" size="small"></el-input>
+                    <el-input @keyup.enter.native='clickSearch()' v-model="search" placeholder="请输入搜索内容" prefix-icon="el-icon-search" size="small"></el-input>
                 </div>
             </div>
             <div class='botton-box'>
@@ -41,6 +41,9 @@ export default {
             // 刷新当前页面
             this.$router.go(0)
         },
+        clickSearch() {
+            alert('我搜索了'+this.search)
+        }
     },
 }
 </script>

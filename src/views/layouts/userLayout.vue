@@ -110,7 +110,7 @@ export default {
 }
 // 头像区域样式
 .el-avatar-box {
-  margin-right: 20px;
+  margin-right: 30px;
 }
 // 头像更多区域样式
 .detailsUser {
