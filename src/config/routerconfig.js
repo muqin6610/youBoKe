@@ -24,9 +24,18 @@ export const constantRouterMap = [
           component: () => import ('@/views/pages/Component.vue'),
           meta: { 
             requiresAuth: false,
-            title:'组件'
+            title:'常用插件'
           },
-        }
+        },
+        {
+          path: '/projectExperience',
+          name: 'ProjectExperience',
+          component: () => import ('@/views/pages/ProjectExperience.vue'),
+          meta: { 
+            requiresAuth: false,
+            title:'项目经历'
+          },
+        },
       ]
     },
     {

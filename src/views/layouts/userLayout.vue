@@ -69,7 +69,7 @@ export default {
                 message: "退出成功!"
               });
               clearStore("token")
-              this.$router.push({ name: "login" })
+              this.$router.push('/login')
             }).catch(() => {
               this.$message({
                 type: 'info',

@@ -54,7 +54,7 @@ const actions = {
       return new Promise((resolve, reject) => {
       commit('auth_request')
       // 向后端发送请求，验证用户名密码是否正确，请求成功接收后端返回的token值，利用commit修改store的state属性，并将token存放在localStorage中
-      axios.post('login', user)
+      axios.get('login', user)
         .then(resp => {
           const token = resp.data.token
           const user = resp.data.user

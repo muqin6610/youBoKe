@@ -12,7 +12,7 @@
         <el-menu-item index="/component">
             <span class='item-text'>常用插件</span>
         </el-menu-item>
-        <el-menu-item index="/page">
+        <el-menu-item index="/projectExperience">
             <span class='item-text'>项目经历</span>
         </el-menu-item>
         <el-submenu v-for='(item,index1) in menuList' :key='index1' :index="item.path">
