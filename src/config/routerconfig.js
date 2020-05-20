@@ -17,6 +17,15 @@ export const constantRouterMap = [
             requiresAuth: false,
             title:'首页'
           },
+        },
+        {
+          path: '/component',
+          name: 'Component',
+          component: () => import ('@/views/pages/Component.vue'),
+          meta: { 
+            requiresAuth: false,
+            title:'组件'
+          },
         }
       ]
     },

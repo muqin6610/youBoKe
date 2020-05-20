@@ -9,11 +9,11 @@
         text-color="#282c34"
         active-text-color="#1890ff"
         mode="horizontal">
-        <el-menu-item index="/page">
-            <span class='item-text'>插件</span>
+        <el-menu-item index="/component">
+            <span class='item-text'>常用插件</span>
         </el-menu-item>
         <el-menu-item index="/page">
-            <span class='item-text'>示例手册</span>
+            <span class='item-text'>项目经历</span>
         </el-menu-item>
         <el-submenu v-for='(item,index1) in menuList' :key='index1' :index="item.path">
           <template slot="title">
@@ -45,12 +45,17 @@ export default {
         //动态获取侧边栏数据 
         getAside(){
           this.menuList = [
-              { path: '/home/Setup', name:'语言', children: [
+              { path: '/home/system2', name:'技术汇总', children: [
+                { path: '/home/system2/userManage', name:'HTML知识' },
+                { path: '/home/system2/userManage', name:'CSS知识' },
+                { path: '/home/system2/userManage', name:'JavaScript知识' },
+                { path: '/home/system2/userManage', name:'Vue知识' },
+                { path: '/home/system2/userManage', name:'网络知识' },
+                { path: '/home/system2/userManage', name:'计算机知识' },
+              ] },
+              { path: '/home/Setup', name:'选择语言', children: [
                 { path: '/home/Setup/userManage', name:'中文' },
                 { path: '/home/Setu1p/userManage', name:'English' },
-              ] },
-              { path: '/home/system2', name:'系统设置', children: [
-                { path: '/home/system2/userManage', name:'菜单管理' },
               ] },
               { path: '/home/system', name:'系统设置', children: [
                 { path: '/home/system/userManage', name:'菜单管理' },

@@ -38,8 +38,7 @@ export default {
     },
     methods: {
         pushHome() {
-            // 刷新当前页面
-            this.$router.go(0)
+            this.$router.push('/')
         },
         clickSearch() {
             alert('我搜索了'+this.search)
