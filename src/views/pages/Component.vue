@@ -3,16 +3,20 @@
       <el-aside>
         <MenuSide/>
       </el-aside>
-      <el-main>Main</el-main>
+      <el-main>
+        <MainContent/>
+      </el-main>
     </el-container>
 </template>
 
 <script>
 import MenuSide from '@/components/MenuSide'
+import MainContent from '@/components/MainContent'
 
 export default {
     components: {
-        MenuSide
+        MenuSide,
+        MainContent
     },
     data() {
         return {

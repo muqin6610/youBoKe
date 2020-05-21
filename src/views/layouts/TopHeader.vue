@@ -51,6 +51,7 @@ export default {
 .topheader {
     height: 60px;
     display: flex;
+    border-bottom: 1px solid #dadce0;
 }
 .logo {
     width: 15%;

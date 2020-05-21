@@ -1,6 +1,7 @@
 <template>
     <el-menu
         default-active="1"
+        @select="handleSelect"
         class="el-menu-vertical-demo">
         <span class="menu-title">开始</span>
         <el-menu-item index="1">
@@ -17,22 +18,22 @@
         </el-menu-item>
         <span class="menu-title">组件</span>
         <el-menu-item index="4">
-          <span slot="title">组件</span>
+          <span slot="title">Button 按钮</span>
         </el-menu-item>
         <el-menu-item index="5">
-          <span slot="title">组件</span>
+          <span slot="title">Icon 图标</span>
         </el-menu-item>
         <el-menu-item index="6">
-          <span slot="title">组件</span>
+          <span slot="title">Select 选择器</span>
         </el-menu-item>
         <el-menu-item index="7">
-          <span slot="title">组件</span>
+          <span slot="title">Input 输入框</span>
         </el-menu-item>
         <el-menu-item index="7">
-          <span slot="title">组件</span>
+          <span slot="title">Form 表单</span>
         </el-menu-item>
         <el-menu-item index="7">
-          <span slot="title">组件</span>
+          <span slot="title">Uplpad 上传</span>
         </el-menu-item>
         <span class="menu-title">示例页面</span>
         <el-menu-item index="8">
@@ -67,7 +68,9 @@ export default {
 
     },
     methods: {
-
+      handleSelect(val) {
+        console.log(val)
+      }
     },
 }
 </script>
